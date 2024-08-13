@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "tbs-chatbot-tihe",
+  "private_key_id": "11e8f21573d0ff33b6b24e6276e7eb008477aec6",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCnFBPkSjSiLJ4n\nSGW0vonRDHm1UnCBknVA3qQrF9QBp6KmMwpTFUXHaQf2M4ctrGmE2UwMbbSMFeY9\nxpCWgNZuQM6/kl+ztOgQadIWJlrBTV8EI3VBhCpm29EF8ef3x88l2aYAnGgu9hcn\nGN+fQKGNan0hejb7BPsa9YjDDqm817NdZ9Giol0z9ZQrGmP1RzV3BD2QdaAvfzWd\n+hCLIgYJYn7X/knp7jsOjLS6cFSOE93HTdaG2LqcrxDyr71m12lcm3T2NHqtvxaj\n1PdFtPUXYnq82ITbL2KzJ0wU4drSLY8j9QYVFxgnpJFDEkz49Izpl2kf0Ya4WuIO\nqLwvd2svAgMBAAECggEAQ4GVve4LkSEE76tNSLeZuIjZXh1GjtvNm125qB2zD84b\nJhrGR6Z3MKhrypqsOhSI99/SXc0vn1Az3G7vuZepzBdMUdQC7fmgsA0JkOCDV8n6\no5HuDQApH7EeJdBFYPRu6oSjkWigoaTV2vquU8qJ27kUgOO/9jFfgdeGIAW7KCy4\nur3fmAv3qvqjTyzJhn/ElE+pnjRp7lLBbqi5di4f/2t3SxFAPPYYNQ/MgRU5YhwR\nEz03zzrtKdfH+/myhQ7Z9RoAToHDkD7Dg9awKZD093mvOevsCLJK11s4Kj61hVCF\nxQ3nFEL+iwP/c4++DRL+9Yw8dAgbjIbRvs3HRcYxdQKBgQDnxE4FR0+VH7gCnpBZ\nNguNeUGj4qAKAnR/SvnBtcB3kvLsTUa3flNFg11XE5EkTlaIG8vQHXauS4ZYgkPM\n8DOXbgmhZ68/92yBxkMMlVtSxRWVkLH1HJOr24/2S16sYmSIcZ0GfLOi3Yejm2To\n15miDxFiX/hJSnaHYp8xg19wvQKBgQC4jELIKp72UikAklWMZSAy4QAzIiSmJ5Uh\nF46PQtNA69GGbEIQ3Tp46fHH7AxHmTTXkbOZ8ZJiMuYylww8vEsRqHVwB+jLB27H\ntm1+O35cp9NakrNznCYb9i87PpE09lUX3vCdKQ/7oknNUMByBRrvaV0+FK72LkJr\nd/62g/U4WwKBgDEL9OrfDXNkc/9x6OBINKeqyn5RHkcf/+FUT4hz2xgy69+f9uAs\nBplGVIFx7Zw+S8egAkC3i38VEog2gPyktHZOXhFfLNIfnUHVYCkQjnP0qz2skkxp\n0MJkw5F+n7lhVR8e0/kkeKt1sBeqce9oeOW3xJkJ8DQqYu0BrOjAgXkNAoGAGuua\n8kgFWDkz8flmsUwvHjzkIpFgdzxe7KzbBtrgph/AOLOiD4O1+91kf51XTTp0Et4W\nLOaoS9rQ6aBPEK0G5lSEjQsaUkOLTWa3Iirbi/iPRC8SLlMg3ANVcHb4B5nHX+wN\nfV94DWTnDyQwbnGANFxSVbP+sbqdxb+DUGx/YPECgYBIY+pULLecfnJyvjddiNdR\n//yxPhDS+DHdKrBnqha+XBqih+W8hRJl07OMQGaF4S/EIOEQ6z2UFR0CttEgniV+\n/lCiXKQCSshRESErlYdJxzwHgXnNqcpeSBV0ir9vh+2/Z4RQQ/jic//KyTc9Rfg4\nbLV9xatfoVM2+w3gr/vLJw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "thebotanicscanner-chatbot@tbs-chatbot-tihe.iam.gserviceaccount.com",
+  "client_id": "107750146972846560480",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/thebotanicscanner-chatbot%40tbs-chatbot-tihe.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

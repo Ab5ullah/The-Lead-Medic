@@ -1,0 +1,386 @@
+name: the_leaf_medic
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.4 <4.0.0"
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^0.13.3
+  firebase_storage: ^11.2.3
+  get:
+  path: ^1.8.0
+  dotted_border: ^2.0.0
+  path_provider: ^2.0.2
+  permission_handler: ^10.0.0
+  share: ^2.0.4
+  flutter_screenutil: ^5.9.0
+  date_format: ^2.0.7
+  photo_manager: ^2.7.1
+  uuid: ^4.0.0
+  video_player: ^2.8.1
+  flutter_staggered_grid_view: ^0.7.0
+  carousel_slider: ^4.0.0
+  image_picker: ^0.8.4+4
+  image_cropper: ^1.4.0
+  url_launcher: ^6.0.10
+  page_transition: ^2.0.9
+  dialog_flowtter: ^0.3.3
+  google_fonts: ^4.0.3
+  geocoding: ^3.0.0
+  multi_image_picker: ^4.8.1
+  flutter_image_compress: ^2.3.0
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  firebase_auth: ^4.6.3
+  firebase_core: ^2.14.0
+  google_sign_in: ^6.1.4
+  cloud_firestore: ^4.8.4
+  firebase_auth_helper: ^2.2.4
+  mailer: ^6.0.1
+  dash_chat_2: ^0.0.18
+  chat_gpt_sdk: ^2.2.5
+  fluttertoast: ^8.2.6
+  shared_preferences: ^2.2.3
+  google_maps_flutter: ^2.6.1
+  geolocator: ^9.0.2
+  fl_chart: ^0.40.0
+  syncfusion_flutter_core: 25.1.35
+  syncfusion_flutter_charts: 25.1.35
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: "^0.13.1"
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/tbs_icon_squi.png"
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^3.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/dialog_flow_auth.json
+    - assets/images/logo.png
+    - assets/images/onboarding_1.png
+    - assets/images/onboarding_2.jpg
+    - assets/images/onboarding_3.jpg
+    - assets/images/corn/corn.png
+    - assets/images/cotton/cotton.png
+    - assets/images/rice/rice.png
+    - assets/images/wheat/wheat.png
+    - assets/images/sugarcane/sugarcane.png
+    - assets/images/clipboard.png
+    - assets/images/solution.png
+    - assets/images/camera.png
+    - assets/images/classify.png
+    - assets/images/corn/corn_leaf.png
+    - assets/images/cotton/cotton_leaf.png
+    - assets/images/rice/rice_leaf.png
+    - assets/images/wheat/wheat_leaf.png
+    - assets/images/wheat/wheat_leaf1.png
+    - assets/images/sugarcane/sugarcane_leaf.png
+    - assets/images/signup_image.png
+    - assets/images/login_image.png
+    - assets/images/google_icon.png
+    - assets/images/forgotpw_image.png
+    - assets/images/smartgrow.png
+    - assets/images/detect.png
+    - assets/images/magnify.png
+    - assets/images/corn/cornfield.jpeg
+    - assets/images/corn/corn_culti.png
+    - assets/images/sun.png
+    - assets/images/chatbot.png
+    - assets/images/cotton/cottonfield.jpeg
+    - assets/images/rice/ricefield.jpeg
+    - assets/images/wheat/wheatfield.jpeg
+    - assets/images/sugarcane/sugarcanefield.jpeg
+    - assets/images/rice/rice_culti.png
+    - assets/images/wheat/wheat_culti.png
+    - assets/images/sugarcane/sugarcane_culti.png
+    - assets/images/cotton/cotton_culti.png
+    - assets/images/getstarted.jpeg
+    - assets/images/user.png
+    - assets/images/recommendation.png
+    - assets/images/corn/corninfo.jpg
+    - assets/images/corn/cornprocess.jpg
+    - assets/images/corn/corncare.jpg
+    - assets/images/corn/cornblight1.jpg
+    - assets/images/corn/cornblight2.jpg
+    - assets/images/corn/cornblight3.jpg
+    - assets/images/corn/corncommonrust1.jpg
+    - assets/images/corn/corncommonrust2.jpg
+    - assets/images/corn/corncommonrust3.jpg
+    - assets/images/corn/corngrayleafspot1.jpg
+    - assets/images/corn/corngrayleafspot2.jpg
+    - assets/images/corn/corngrayleafspot3.jpg
+    - assets/images/whatsapp.png
+    - assets/images/email.png
+    - assets/images/instagram.png
+    - assets/images/facebook.png
+    - assets/images/cotton/cottonaphids1.jpg
+    - assets/images/cotton/cottonaphids2.jpg
+    - assets/images/cotton/cottonaphids3.jpg
+    - assets/images/cotton/cottonarmyworm1.jpg
+    - assets/images/cotton/cottonarmyworm2.jpg
+    - assets/images/cotton/cottonarmyworm3.jpg
+    - assets/images/cotton/cottonbacterialblight1.jpg
+    - assets/images/cotton/cottonbacterialblight2.jpg
+    - assets/images/cotton/cottonbacterialblight3.jpg
+    - assets/images/cotton/cottonpowderymildew1.jpg
+    - assets/images/cotton/cottonpowderymildew2.jpg
+    - assets/images/cotton/cottonpowderymildew3.jpg
+    - assets/images/cotton/cottontargetspot1.jpg
+    - assets/images/cotton/cottontargetspot2.jpg
+    - assets/images/cotton/cottontargetspot3.jpg
+    - assets/images/rice/ricebacterialleafblight1.jpg
+    - assets/images/rice/ricebacterialleafblight2.jpg
+    - assets/images/rice/ricebacterialleafblight1.jpg
+    - assets/images/rice/ricebrownspot1.jpg
+    - assets/images/rice/ricebrownspot2.jpg
+    - assets/images/rice/ricebrownspot3.jpg
+    - assets/images/rice/ricehispa1.jpg
+    - assets/images/rice/ricehispa2.jpg
+    - assets/images/rice/ricehispa3.jpg
+    - assets/images/getstarted.jpg
+    - assets/images/timberleaf.jpg
+    - assets/images/secondedit.jpg
+    - assets/images/reports.jpg
+    - assets/images/marketplace.png
+    - assets/images/mappic.jpg
+    - assets/images/rice/riceleafblast1.jpg
+    - assets/images/rice/riceleafblast2.jpg
+    - assets/images/rice/riceleafblast3.jpg
+    - assets/images/rice/ricetungro1.jpg
+    - assets/images/rice/ricetungro2.jpg
+    - assets/images/rice/ricetungro3.jpg
+    - assets/images/sugarcane/sugarcanebacterialblight1.jpg
+    - assets/images/sugarcane/sugarcanebacterialblight2.jpg
+    - assets/images/sugarcane/sugarcanebacterialblight3.jpg
+    - assets/images/sugarcane/sugarcaneredrot1.jpg
+    - assets/images/sugarcane/sugarcaneredrot2.jpg
+    - assets/images/sugarcane/sugarcaneredrot3.jpg
+    - assets/images/sugarcane/sugarcaneredrust1.jpg
+    - assets/images/sugarcane/sugarcaneredrust2.jpg
+    - assets/images/sugarcane/sugarcaneredrust3.jpg
+    - assets/images/wheat/wheatbrownrust1.jpg
+    - assets/images/wheat/wheatbrownrust2.jpg
+    - assets/images/wheat/wheatbrownrust3.jpg
+    - assets/images/wheat/wheatseptoria1.jpg
+    - assets/images/wheat/wheatseptoria2.jpg
+    - assets/images/wheat/wheatseptoria3.jpg
+    - assets/images/wheat/wheatyellowrust1.jpg
+    - assets/images/wheat/wheatyellowrust2.jpg
+    - assets/images/wheat/wheatyellowrust3.jpg
+    - assets/images/care.jpg
+    - assets/images/process.jpg
+    - assets/images/culture.png
+    - assets/images/basicinfo.jpg
+    - assets/images/5crops.png
+    - assets/images/onrecommendation.png
+    - assets/images/chat.png
+    - assets/images/userbot.png
+    - assets/images/grow_crop.jpg
+    - assets/images/tbs_icon_squi.png
+    - assets/images/background2.png
+    - assets/images/cotton/cottonbasic.jpeg
+    - assets/images/cotton/cottonprocess.jpeg
+    - assets/images/rice/ricebasic.jpeg
+    - assets/images/rice/riceprocess.jpeg
+    - assets/images/wheat/wheatbasic.jpeg
+    - assets/images/wheat/wheatprocess.jpeg
+    - assets/images/sugarcane/sugarbasic.jpeg
+    - assets/images/sugarcane/sugarprocess.jpeg
+    - assets/images/corn/cornbasic.jpeg
+    - assets/images/corn/cornprocess.jpeg
+    - assets/images/care.jpeg
+    - assets/images/apple/apple.png
+    - assets/images/apple/applefield.jpeg
+    - assets/images/apple/apple_culti.png
+    - assets/images/apple/applebasic.jpeg
+    - assets/images/apple/appleprocess.jpeg
+    - assets/images/apple/apple_leaf.png
+    - assets/images/apple/apple_healty1.jpg
+    - assets/images/apple/apple_healty2.jpg
+    - assets/images/apple/apple_healty3.jpg
+    - assets/images/apple/apple_leaf.png
+    - assets/images/apple/apple_scab1.jpg
+    - assets/images/apple/apple_scab2.jpg
+    - assets/images/apple/apple_scab3.jpg
+    - assets/images/apple/black_rot1.jpg
+    - assets/images/apple/black_rot2.jpg
+    - assets/images/apple/black_rot3.jpg
+    - assets/images/apple/cedar_apple_rust1.jpg
+    - assets/images/apple/cedar_apple_rust2.jpg
+    - assets/images/apple/cedar_apple_rust3.jpg
+    - assets/images/cherry/cherryfield.jpeg
+    - assets/images/cherry/cherry_culti.png
+    - assets/images/cherry/Cherry_(including_sour)___healthy1.jpg
+    - assets/images/cherry/Cherry_(including_sour)___healthy2.jpg
+    - assets/images/cherry/Cherry_(including_sour)___healthy3.jpg
+    - assets/images/cherry/Cherry_(including_sour)___Powdery_mildew1.jpg
+    - assets/images/cherry/Cherry_(including_sour)___Powdery_mildew2.jpg
+    - assets/images/cherry/Cherry_(including_sour)___Powdery_mildew3.jpg
+    - assets/images/cherry/cherry_leaf.png
+    - assets/images/cherry/cherry.png
+    - assets/images/cherry/cherrybasic.jpeg
+    - assets/images/cherry/cherryprocess.jpeg
+    - assets/images/grape/grape.png
+    - assets/images/grape/Grape___Black_rot1.jpg
+    - assets/images/grape/Grape___Black_rot2.jpg
+    - assets/images/grape/Grape___Black_rot3.jpg
+    - assets/images/grape/Grape___Esca_(Black_Measles)1.jpg
+    - assets/images/grape/Grape___Esca_(Black_Measles)2.jpg
+    - assets/images/grape/Grape___Esca_(Black_Measles)3.jpg
+    - assets/images/grape/Grape___healthy1.jpg
+    - assets/images/grape/Grape___healthy2.jpg
+    - assets/images/grape/Grape___healthy3.jpg
+    - assets/images/grape/Grape___Leaf_blight_(Isariopsis_Leaf_Spot)1.jpg
+    - assets/images/grape/Grape___Leaf_blight_(Isariopsis_Leaf_Spot)2.jpg
+    - assets/images/grape/Grape___Leaf_blight_(Isariopsis_Leaf_Spot)3.jpg
+    - assets/images/grape/grape_culti.png
+    - assets/images/grape/grape_leaf.png
+    - assets/images/grape/grapebasic.jpeg
+    - assets/images/grape/grapefield.jpeg
+    - assets/images/grape/grapeprocess.jpeg
+    - assets/images/orange/Orange___Haunglongbing_(Citrus_greening)1.jpg
+    - assets/images/orange/Orange___Haunglongbing_(Citrus_greening)2.jpg
+    - assets/images/orange/Orange___Haunglongbing_(Citrus_greening)3.jpg
+    - assets/images/orange/orange_culti.png
+    - assets/images/orange/orange_leaf.png
+    - assets/images/orange/orange.png
+    - assets/images/orange/orangebasic.jpeg
+    - assets/images/orange/orangefield.jpeg
+    - assets/images/orange/orangeprocess.jpeg
+    - assets/images/pepper/pepper_culti.png
+    - assets/images/pepper/pepper_leaf.png
+    - assets/images/pepper/Pepper,_bell___Bacterial_spot1.jpg
+    - assets/images/pepper/Pepper,_bell___Bacterial_spot2.jpg
+    - assets/images/pepper/Pepper,_bell___Bacterial_spot3.jpg
+    - assets/images/pepper/Pepper,_bell___healthy1.jpg
+    - assets/images/pepper/Pepper,_bell___healthy2.jpg
+    - assets/images/pepper/Pepper,_bell___healthy3.jpg
+    - assets/images/pepper/pepper.png
+    - assets/images/pepper/pepperbasic.jpeg
+    - assets/images/pepper/pepperfield.jpeg
+    - assets/images/pepper/pepperprocess.jpeg
+    - assets/images/potato/Potato___Early_blight1.jpg
+    - assets/images/potato/Potato___Early_blight2.jpg
+    - assets/images/potato/Potato___Early_blight3.jpg
+    - assets/images/potato/Potato___healthy1.jpg
+    - assets/images/potato/Potato___healthy2.jpg
+    - assets/images/potato/Potato___healthy3.jpg
+    - assets/images/potato/Potato___Late_blight1.jpg
+    - assets/images/potato/Potato___Late_blight2.jpg
+    - assets/images/potato/Potato___Late_blight3.jpg
+    - assets/images/potato/potato_culti.png
+    - assets/images/potato/potato_leaf.png
+    - assets/images/potato/potato.png
+    - assets/images/potato/potatobasic.jpeg
+    - assets/images/potato/potatofield.jpeg
+    - assets/images/potato/potatoprocess.jpeg
+    - assets/images/tomato/Tomato___Bacterial_spot1.jpg
+    - assets/images/tomato/Tomato___Bacterial_spot2.jpg
+    - assets/images/tomato/Tomato___Bacterial_spot3.jpg
+    - assets/images/tomato/Tomato___Early_blight1.jpg
+    - assets/images/tomato/Tomato___Early_blight2.jpg
+    - assets/images/tomato/Tomato___Early_blight3.jpg
+    - assets/images/tomato/Tomato___healthy1.jpg
+    - assets/images/tomato/Tomato___healthy2.jpg
+    - assets/images/tomato/Tomato___healthy3.jpg
+    - assets/images/tomato/Tomato___Late_blight1.jpg
+    - assets/images/tomato/Tomato___Late_blight2.jpg
+    - assets/images/tomato/Tomato___Late_blight3.jpg
+    - assets/images/tomato/Tomato___Leaf_Mold1.jpg
+    - assets/images/tomato/Tomato___Leaf_Mold2.jpg
+    - assets/images/tomato/Tomato___Leaf_Mold3.jpg
+    - assets/images/tomato/Tomato___Septoria_leaf_spot1.jpg
+    - assets/images/tomato/Tomato___Septoria_leaf_spot2.jpg
+    - assets/images/tomato/Tomato___Septoria_leaf_spot3.jpg
+    - assets/images/tomato/Tomato___Spider_mites1.jpg
+    - assets/images/tomato/Tomato___Spider_mites2.jpg
+    - assets/images/tomato/Tomato___Spider_mites3.jpg
+    - assets/images/tomato/Tomato___Target_Spot1.jpg
+    - assets/images/tomato/Tomato___Target_Spot2.jpg
+    - assets/images/tomato/Tomato___Target_Spot3.jpg
+    - assets/images/tomato/Tomato___Tomato_mosaic_virus1.jpg
+    - assets/images/tomato/Tomato___Tomato_mosaic_virus2.jpg
+    - assets/images/tomato/Tomato___Tomato_mosaic_virus3.jpg
+    - assets/images/tomato/Tomato___Tomato_Yellow_Leaf_Curl_Virus1.jpg
+    - assets/images/tomato/Tomato___Tomato_Yellow_Leaf_Curl_Virus2.jpg
+    - assets/images/tomato/Tomato___Tomato_Yellow_Leaf_Curl_Virus3.jpg
+    - assets/images/tomato/tomato_culti.png
+    - assets/images/tomato/tomato_leaf.png
+    - assets/images/tomato/tomato.png
+    - assets/images/tomato/tomatobasic.jpeg
+    - assets/images/tomato/tomatofield.jpeg
+    - assets/images/tomato/tomatoprocess.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages

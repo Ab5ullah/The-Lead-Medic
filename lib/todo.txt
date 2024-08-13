@@ -1,0 +1,61 @@
+Last Date: 23 June
+
+Aqsa:
+
+
+
+
+
+
+11. Integrating MarketPlace  (DONE) <-----------------------
+14. Report  Ui remaining  (DONE) <-----------------------
+13. Applying the range work on the whole  (DONE) <-----------------------
+15. Grape ML system Error. Check the ramining systems as well. (DONE) <-----------------------
+4. Drawer (Add User Image at the Top, Enhance the UI) (DONE)  <-----------------------
+1. Range Setting (at least 3 images should be uploaded by the user for good detection) (DONE) <-----------------------
+2. Recommendations (Apply the ML) (DONE) <-----------------------
+6. Recommendations range correctness (DONE) <-----------------------
+7. Routing System (DONE) <---------------------------
+8. UI of Detect Now (DONE) <---------------------------
+9. UI od Each and Every Screen Related to Crops and Disease (DONE) <---------------------------
+15.Train all model for Crops (DONE) <---------------------------
+16. Change the UI of whole App (DONE) <---------------------------
+17. Routing System Settings (DONE) <---------------------------
+12. Integrating Irfas (DONE) <-----------------------
+18 ChatGpt  (DONE) <-----------------------
+3.  Profile (Add more things Like Mobile No, Settings for theme, RESET PASSWORD FUNCTION) (DONE) <-----------------------
+
+
+
+
+Irfa: 
+1. Documentation
+2. Cultivation and Disease Detection Page data adding
+
+
+Abdullah:
+
+1. MarketPlace
+2. Maps (DONE) <---------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "69959958676",
+    "project_id": "leafmedic-da892",
+    "storage_bucket": "leafmedic-da892.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:69959958676:android:cf1728bf017c3955cab481",
+        "android_client_info": {
+          "package_name": "com.LeafMedic.App"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1pwusxpn3j6YtrdK956YxJG6smTKdXf0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
